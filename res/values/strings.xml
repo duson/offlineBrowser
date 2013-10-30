@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">离线浏览器</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="btn_site_cnblogs">博客园</string>
+    <string name="btn_site_sznews">深圳新闻网</string>
+    <string name="btn_site_other">其它</string>
+    <string name="title_activity_web_lists">List</string>
+    <string name="title_activity_web">Web</string>
+    <string name="title_activity_my_preference">Preference</string>
+    <string name="title_activity_download">DownloadActivity</string>
+
+</resources>

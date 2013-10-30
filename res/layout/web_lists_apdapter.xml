@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/chkSelected" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblSiteId" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblUrl" android:visibility="gone" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblTitle" android:layout_marginLeft="5px" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblSuccess" android:layout_marginLeft="5px" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblClear" android:layout_marginLeft="5px" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblCollDate" android:layout_marginLeft="5px" />
+	
+	<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="采集" android:id="@+id/btnCollect" android:layout_marginLeft="5px" />
+	<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="清除" android:id="@+id/btnClear" />
+</LinearLayout>

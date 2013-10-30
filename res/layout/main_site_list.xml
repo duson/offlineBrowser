@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblSiteId" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblSiteName" android:layout_marginLeft="3px" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblUrl" android:layout_marginLeft="3px" />
+	<TextView android:layout_height="wrap_content" android:layout_width="50px" android:id="@+id/lblLastCollDate" android:layout_marginLeft="3px" />
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblCount" android:layout_marginLeft="3px" />
+	
+	<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="查看" android:id="@+id/btnView" android:layout_marginLeft="10px" />
+	<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="采集" android:id="@+id/btnCollect" />
+	<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="清除" android:id="@+id/btnClear" />
+	<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="删除" android:id="@+id/btnDelete" />
+	
+</LinearLayout>

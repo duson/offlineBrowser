@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cpm.offlinebrowser"
+    android:versionCode="2"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Default" >
+        <activity
+            android:name="com.cpm.offlinebrowser.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cpm.offlinebrowser.WebListsActivity"
+            android:label="@string/title_activity_web_lists" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.cpm.offlinebrowser.WebActivity"
+            android:label="@string/title_activity_web" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.NativeActivity" />
+        </activity>
+        <activity
+            android:name="com.cpm.offlinebrowser.MyPreferenceActivity"
+            android:label="@string/title_activity_my_preference" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.preference.PreferenceActivity" />
+        </activity>
+
+        <service android:name="com.cpm.offlinebrowser.service.DownloadService" />
+
+        <activity
+            android:name="com.cpm.offlinebrowser.DownloadActivity"
+            android:label="@string/title_activity_download" >
+        </activity>
+    </application>
+
+</manifest>
